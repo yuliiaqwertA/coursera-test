@@ -2,21 +2,41 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Styling Text</title>
+<title>The Box Model</title>
 <style>
-.style {
-font-family: Arial, Helvetica, sans-serif;
-color: #0000ff;
-font-size: italic;
-font-weight: bold;
-font-size: 24px;
-text-transform: uppercase;
-text-align: right;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
 }
+
+#box {
+  background-color: blue;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 40px;
+  width: 300px;
+  box-sizing: border-box;
+}
+#content {
+  background-color: #90EE90; /*green*/
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
 </style>
 </head>
 <body>
-<p>You can get commonly used font combinations from <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">http://www.w3schools.com/cssref/css_websafe_fonts.asp</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quod necessitatibus a ullam dolorum amet reprehenderit sit laudantium reiciendis aperiam. </p>
-<p class="style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam fugiat repudiandae fugit porro commodi.</p>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+</div>
+
+
 </body>
 </html>
